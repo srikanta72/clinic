@@ -1,0 +1,67 @@
+[debug] [2022-08-07T08:30:57.913Z] ----------------------------------------------------------------------
+[debug] [2022-08-07T08:30:57.915Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-08-07T08:30:57.916Z] CLI Version:   11.4.2
+[debug] [2022-08-07T08:30:57.916Z] Platform:      darwin
+[debug] [2022-08-07T08:30:57.916Z] Node Version:  v16.14.0
+[debug] [2022-08-07T08:30:57.921Z] Time:          Sun Aug 07 2022 14:00:57 GMT+0530 (India Standard Time)
+[debug] [2022-08-07T08:30:57.921Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-07T08:30:57.924Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-08-07T08:30:57.993Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-07T08:30:57.993Z] > authorizing via signed-in user (teamcutezero@gmail.com)
+[debug] [2022-08-07T08:30:57.993Z] [iam] checking project clinic-cz for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-07T08:30:57.994Z] > refreshing access token with scopes: []
+[debug] [2022-08-07T08:30:57.995Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-08-07T08:30:57.995Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-07T08:30:58.587Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-08-07T08:30:58.588Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-07T08:30:58.631Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clinic-cz:testIamPermissions [none]
+[debug] [2022-08-07T08:30:58.632Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clinic-cz:testIamPermissions x-goog-quota-user=projects/clinic-cz
+[debug] [2022-08-07T08:30:58.632Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clinic-cz:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-07T08:30:59.224Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-08-07T08:30:59.224Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-08-07T08:31:00.514Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clinic-cz:testIamPermissions 200
+[debug] [2022-08-07T08:31:00.514Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clinic-cz:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-07T08:31:00.515Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clinic-cz [none]
+[debug] [2022-08-07T08:31:01.394Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clinic-cz 200
+[debug] [2022-08-07T08:31:01.394Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clinic-cz {"projectId":"clinic-cz","projectNumber":"571706675490","displayName":"clinic","name":"projects/clinic-cz","resources":{"hostingSite":"clinic-cz","realtimeDatabaseInstance":"clinic-cz-default-rtdb","storageBucket":"clinic-cz.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_bd8eb071-8dc9-4298-a37f-078e205a9537"}
+[info] 
+[info] === Deploying to 'clinic-cz'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-07T08:31:01.396Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clinic-cz [none]
+[debug] [2022-08-07T08:31:02.369Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clinic-cz 200
+[debug] [2022-08-07T08:31:02.369Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clinic-cz {"projectId":"clinic-cz","projectNumber":"571706675490","displayName":"clinic","name":"projects/clinic-cz","resources":{"hostingSite":"clinic-cz","realtimeDatabaseInstance":"clinic-cz-default-rtdb","storageBucket":"clinic-cz.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_bd8eb071-8dc9-4298-a37f-078e205a9537"}
+[debug] [2022-08-07T08:31:02.372Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/571706675490/sites/clinic-cz/versions [none]
+[debug] [2022-08-07T08:31:02.372Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/571706675490/sites/clinic-cz/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-07T08:31:04.687Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/571706675490/sites/clinic-cz/versions 200
+[debug] [2022-08-07T08:31:04.687Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/571706675490/sites/clinic-cz/versions {"name":"projects/571706675490/sites/clinic-cz/versions/5d2beccc086e0b4c","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[clinic-cz]: beginning deploy... 
+[info] i  hosting[clinic-cz]: found 14 files in build 
+[debug] [2022-08-07T08:31:04.695Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-07T08:31:04.910Z] [hosting] hash cache [YnVpbGQ] stored for 14 files
+[debug] [2022-08-07T08:31:04.910Z] [hosting][hash queue][FINAL] {"max":210,"min":11,"avg":29.714285714285715,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":214}
+[debug] [2022-08-07T08:31:04.910Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/571706675490/sites/clinic-cz/versions/5d2beccc086e0b4c:populateFiles [none]
+[debug] [2022-08-07T08:31:04.910Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/571706675490/sites/clinic-cz/versions/5d2beccc086e0b4c:populateFiles {"files":{"/asset-manifest.json":"2ed7a59c553906aedbcb8f74dfc09e17adfdc7fb391ab40683d693fdf5322ca5","/index.html":"3a8041db44249398d0e47e0ff3232fe97489968608535d07bc814767fba4bc0d","/manifest.json":"68491fa4feca5a7bff7af2627babd00af7ea502a9946ed2ff293e980f345cc0d","/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/static/js/787.1d6ecba0.chunk.js":"f5a422777f1c0687572542f4243965bff128f9b50a4ebceebd49f4990c9453c7","/static/js/main.2c1c896a.js.LICENSE.txt":"8930c33a378b6764a0c66e695e1af38a223b66fb32d2341408852869d9c2c0bb","/static/js/787.1d6ecba0.chunk.js.map":"580b69f5fe8aadb68bd862d720eac906044f68ec16cb27b691555be762cf2c44","/logo192.jpg":"7e691db280285aa12f2fffdbb7bfd2a80b7fd947cffd8b4c24641079ab667e6f","/favicon.ico":"7e691db280285aa12f2fffdbb7bfd2a80b7fd947cffd8b4c24641079ab667e6f","/logo512.jpg":"7e691db280285aa12f2fffdbb7bfd2a80b7fd947cffd8b4c24641079ab667e6f","/static/css/main.4de0fa12.css":"94e1d3f0c97c2300285613d2cfe7b23f474004c0e1e6932a0743b87ce9394a38","/static/js/main.2c1c896a.js":"bc683b24b3e91d9cd4d39306ce6c4ebee57b5ad90cb99d790ec546b88849ec1a","/static/css/main.4de0fa12.css.map":"44dee611e9df68304144343df54c36aacce74c81a93b798ad995c228c1e160a0","/static/js/main.2c1c896a.js.map":"bc2011f990d3a670c16dac9aafd8e67a82336570322a585a49dbc2f5be36d530"}}
+[debug] [2022-08-07T08:31:07.006Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/571706675490/sites/clinic-cz/versions/5d2beccc086e0b4c:populateFiles 200
+[debug] [2022-08-07T08:31:07.006Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/571706675490/sites/clinic-cz/versions/5d2beccc086e0b4c:populateFiles {"uploadRequiredHashes":["68491fa4feca5a7bff7af2627babd00af7ea502a9946ed2ff293e980f345cc0d","bc683b24b3e91d9cd4d39306ce6c4ebee57b5ad90cb99d790ec546b88849ec1a","2ed7a59c553906aedbcb8f74dfc09e17adfdc7fb391ab40683d693fdf5322ca5","7e691db280285aa12f2fffdbb7bfd2a80b7fd947cffd8b4c24641079ab667e6f","94e1d3f0c97c2300285613d2cfe7b23f474004c0e1e6932a0743b87ce9394a38","bc2011f990d3a670c16dac9aafd8e67a82336570322a585a49dbc2f5be36d530","3a8041db44249398d0e47e0ff3232fe97489968608535d07bc814767fba4bc0d","8930c33a378b6764a0c66e695e1af38a223b66fb32d2341408852869d9c2c0bb","44dee611e9df68304144343df54c36aacce74c81a93b798ad995c228c1e160a0"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files"}
+[debug] [2022-08-07T08:31:07.009Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/68491fa4feca5a7bff7af2627babd00af7ea502a9946ed2ff293e980f345cc0d [none]
+[debug] [2022-08-07T08:31:07.009Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/68491fa4feca5a7bff7af2627babd00af7ea502a9946ed2ff293e980f345cc0d [stream]
+[debug] [2022-08-07T08:31:07.010Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/bc683b24b3e91d9cd4d39306ce6c4ebee57b5ad90cb99d790ec546b88849ec1a [none]
+[debug] [2022-08-07T08:31:07.010Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/bc683b24b3e91d9cd4d39306ce6c4ebee57b5ad90cb99d790ec546b88849ec1a [stream]
+[debug] [2022-08-07T08:31:07.011Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/2ed7a59c553906aedbcb8f74dfc09e17adfdc7fb391ab40683d693fdf5322ca5 [none]
+[debug] [2022-08-07T08:31:07.011Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/2ed7a59c553906aedbcb8f74dfc09e17adfdc7fb391ab40683d693fdf5322ca5 [stream]
+[debug] [2022-08-07T08:31:07.013Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/7e691db280285aa12f2fffdbb7bfd2a80b7fd947cffd8b4c24641079ab667e6f [none]
+[debug] [2022-08-07T08:31:07.013Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/7e691db280285aa12f2fffdbb7bfd2a80b7fd947cffd8b4c24641079ab667e6f [stream]
+[debug] [2022-08-07T08:31:07.014Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/94e1d3f0c97c2300285613d2cfe7b23f474004c0e1e6932a0743b87ce9394a38 [none]
+[debug] [2022-08-07T08:31:07.014Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/94e1d3f0c97c2300285613d2cfe7b23f474004c0e1e6932a0743b87ce9394a38 [stream]
+[debug] [2022-08-07T08:31:07.015Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/bc2011f990d3a670c16dac9aafd8e67a82336570322a585a49dbc2f5be36d530 [none]
+[debug] [2022-08-07T08:31:07.015Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/bc2011f990d3a670c16dac9aafd8e67a82336570322a585a49dbc2f5be36d530 [stream]
+[debug] [2022-08-07T08:31:07.016Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/3a8041db44249398d0e47e0ff3232fe97489968608535d07bc814767fba4bc0d [none]
+[debug] [2022-08-07T08:31:07.016Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/3a8041db44249398d0e47e0ff3232fe97489968608535d07bc814767fba4bc0d [stream]
+[debug] [2022-08-07T08:31:07.016Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/8930c33a378b6764a0c66e695e1af38a223b66fb32d2341408852869d9c2c0bb [none]
+[debug] [2022-08-07T08:31:07.016Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/8930c33a378b6764a0c66e695e1af38a223b66fb32d2341408852869d9c2c0bb [stream]
+[debug] [2022-08-07T08:31:07.017Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/44dee611e9df68304144343df54c36aacce74c81a93b798ad995c228c1e160a0 [none]
+[debug] [2022-08-07T08:31:07.017Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clinic-cz/versions/5d2beccc086e0b4c/files/44dee611e9df68304144343df54c36aacce74c81a93b798ad995c228c1e160a0 [stream]
+[debug] [2022-08-07T08:31:07.018Z] [hosting][populate queue][FINAL] {"max":2100,"min":2100,"avg":2100,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2109}
+[debug] [2022-08-07T08:31:07.018Z] [hosting] uploads queued: 9

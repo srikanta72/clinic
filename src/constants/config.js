@@ -1,0 +1,1 @@
+export const TEXT_MESSAGE_SHARE= 'Share%20Via%20clinics.cutezero.com'
