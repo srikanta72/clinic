@@ -30,5 +30,16 @@ export const clinics = [
         rating: 4.2,
         gmapUrl: 'https://maps.app.goo.gl/K3kfVritzStgpQ537',
         phoneNumber: '9911 303 040',
-    }
+        whatsAppNumber:'9911303040',
+    },
+    {
+        id: '3',
+        title: 'Bhagabati Physiotherapy Clinic',
+        description: 'Physeo clinic, phone2: 7978012890',
+        imageUrl: 'assets/images/cutezero_sketch_2.jpg',
+        rating: 4.3,
+        gmapUrl: 'https://maps.app.goo.gl/TEqUKg5SBMyMRAcv8',
+        phoneNumber: '085990 65999',
+        whatsAppNumber:'8599065999',
+    },
 ]
