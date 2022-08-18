@@ -21,5 +21,13 @@ export const clinics = [
         rating: 4.1,
         gmapUrl: 'https://goo.gl/maps/KYucT7VYAaQNmLjP7',
         phoneNumber: '0680 229 2746',
+        country: 'India',
+        stateUT: 'Odisha',
+        distCity: 'Ganjam',
+        area: '',
+        localArea: '',
+        pin: '',
+        longitude: '',
+        lattitude: ''
     }
 ]
