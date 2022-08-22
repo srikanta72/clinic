@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import CardView from '../shared/CardView';
-import { addAClinic, getAllClinics } from '../../services/firestore/clinicsApi';
+import { getAllClinics } from '../../services/firestore/clinicsApi';
 import { useEffect, useState } from 'react';
 
 // function distance(lat1, lon1, lat2, lon2, unit) {
@@ -37,26 +37,27 @@ export const ClinicsList = () => {
 
     // addAClinic(
     //     {
-    //         id: '12',
-    //         title: 'Balaji Diagnostic Centre',
+    //         id: '13',
+    //         type: 'Hospital',
+    //         title: 'All India Institute of Medical Sciences, Bhubaneswar',
     //         description: `
-    //         All types of Diagnostics are available.
-    //         Waiting seats facility is limited to 12 persons only. 
-    //         In case you are in queue We will call you when your number is available. 
-    //         On call enquiry is also available.
+    //         Odisha's No 1 Hospital
+    //         • Offered here: Corbevax vaccine · Covaxin vaccine
+    //         • Has appointments (1 min ago)
+    //         • Free
+    //         Instructions: Visit the CoWIN portal for online appointments. Contact the vaccine center and keep your government IDs ready for walk-in registrations
     //         `,
-    //         imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipPy_znSsZxiZ8MY91qpDRApA1NZfvOawhrLOtS0=w426-h240-k-no',
-    //         rating: 3.2,
-    //         gmapUrl: 'https://goo.gl/maps/TR9xen5mt7kCTJZD8',
-    //         phoneNumber: '',
+    //         imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipOmOZ-p0xPMtmoVeO4tYv6EorarqtiJ-vLDtpex=s773-k-no',
+    //         rating: 4.6,
+    //         gmapUrl: 'https://goo.gl/maps/myuh2N1yzcLLqQv5A',
+    //         phoneNumber: '06742476461',
     //         country: 'India',
     //         stateUT: 'Odisha',
     //         distCity: 'Ganjam',
-    //         area: 'Brahmapur',
-    //         localArea: 'Courtpeta Chhaka',
-    //         lat:19.31,
-    //         lng:84.80,
-    //         type: 'Diagnostics Center'
+    //         area: 'Bhubaneswar',
+    //         localArea: 'AIIMS',
+    //         lat:20.23,
+    //         lng:85.77,
     //     },
     // )
 

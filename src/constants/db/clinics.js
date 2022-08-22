@@ -249,4 +249,27 @@ export const clinics = [
         lng:84.80,
         type: 'Diagnostics Center'
     },
+    {
+        id: '13',
+        type: 'Hospital',
+        title: 'All India Institute of Medical Sciences, Bhubaneswar',
+        description: `
+        Odisha's No 1 Hospital
+        • Offered here: Corbevax vaccine · Covaxin vaccine
+        • Has appointments (1 min ago)
+        • Free
+        Instructions: Visit the CoWIN portal for online appointments. Contact the vaccine center and keep your government IDs ready for walk-in registrations
+        `,
+        imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipOmOZ-p0xPMtmoVeO4tYv6EorarqtiJ-vLDtpex=s773-k-no',
+        rating: 4.6,
+        gmapUrl: 'https://goo.gl/maps/myuh2N1yzcLLqQv5A',
+        phoneNumber: '06742476461',
+        country: 'India',
+        stateUT: 'Odisha',
+        distCity: 'Ganjam',
+        area: 'Bhubaneswar',
+        localArea: 'AIIMS',
+        lat:20.23,
+        lng:85.77,
+    },
 ]
