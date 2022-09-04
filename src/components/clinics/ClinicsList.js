@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import CardView from '../shared/CardView';
-import { getAllClinics } from '../../services/firestore/clinicsApi';
+import { addAClinic, getAllClinics } from '../../services/firestore/clinicsApi';
 import { useEffect, useState } from 'react';
 
 // function distance(lat1, lon1, lat2, lon2, unit) {
@@ -35,31 +35,29 @@ export const ClinicsList = () => {
     }, [])
 
 
-    // addAClinic(
-    //     {
-    //         id: '13',
-    //         type: 'Hospital',
-    //         title: 'All India Institute of Medical Sciences, Bhubaneswar',
-    //         description: `
-    //         Odisha's No 1 Hospital
-    //         • Offered here: Corbevax vaccine · Covaxin vaccine
-    //         • Has appointments (1 min ago)
-    //         • Free
-    //         Instructions: Visit the CoWIN portal for online appointments. Contact the vaccine center and keep your government IDs ready for walk-in registrations
-    //         `,
-    //         imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipOmOZ-p0xPMtmoVeO4tYv6EorarqtiJ-vLDtpex=s773-k-no',
-    //         rating: 4.6,
-    //         gmapUrl: 'https://goo.gl/maps/myuh2N1yzcLLqQv5A',
-    //         phoneNumber: '06742476461',
-    //         country: 'India',
-    //         stateUT: 'Odisha',
-    //         distCity: 'Ganjam',
-    //         area: 'Bhubaneswar',
-    //         localArea: 'AIIMS',
-    //         lat:20.23,
-    //         lng:85.77,
-    //     },
-    // )
+//     addAClinic(
+//         {
+//             id: '30',
+//             type: 'Hospital',
+//             title: 'Enhance Hairtech Clinic',
+//             description: `
+// Hair Transplant Clinic In Bhubaneswar
+//  Plot No. A/154, s road, beside Kalyan Jeweller, Saheed Nagar, Bhubaneswar, Odisha 751007
+//             `,
+//             imageUrl: 'https://lh5.googleusercontent.com/p/AF1QipPYZMNimd059YdudSubLCwha41K0NxdfuNX3vY=s1160-k-no',
+//             rating: 4.7,
+//             gmapUrl: 'https://g.page/hairtechodisha?share',
+//             phoneNumber: '09040030703',
+//             country: 'India',
+//             stateUT: 'Odisha',
+//             distCity: 'Khordha',
+//             area: 'Bhubaneswar',
+//             localArea: 'Saheed Nagar',
+//    //         lat:20.300881409600542, 
+//    //         lng:85.80088439330241,
+//              latLng:[20.30123021308103, 85.8433052298074]
+//         },
+//     )
 
 
     // navigator.geolocation.getCurrentPosition(function (position) {

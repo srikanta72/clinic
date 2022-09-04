@@ -38,10 +38,13 @@ export const addAClinic = async (data) => {
       // pin,  //pin: '',
       lat,  //lat: 19.31,
       lng,  //lon: 84.80,
+      latLng
 
    } = data;
-   const geohash = geohashForLocation([lat, lng]);
+   const geohash = geohashForLocation([lat || latLng[0], lng || latLng[1]]);
    data.geohash = geohash;
+   data.lat = latLng[0];
+   data.lng = latLng[1];
 
 
    if (id) {
